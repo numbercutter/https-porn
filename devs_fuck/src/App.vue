@@ -3,7 +3,7 @@
     <div id="nav">
       <div>YOUR ART SUCKS</div>
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/whitepaper">Whitepaper</router-link>
       <template v-if="isAuthenticated">
         <button @click="logout">logout</button>
       </template>
