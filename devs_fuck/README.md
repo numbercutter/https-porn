@@ -1,4 +1,4 @@
-# fuck_me_1
+# devs_fuck
 
 ## Project setup
 ```
