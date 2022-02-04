@@ -1,0 +1,29 @@
+$background-color: rgb(0, 0, 0);
+$primary-color: rgb(153, 0, 255);
+$secondary-color: rgb(0, 255, 136);
+$text-primary: rgb(89, 0, 253);
+
+* {
+  margin: 0 !important;
+  ::-webkit-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    display: none;
+  }
+
+}
+
+body {
+  background-color: $background-color;
+  width: 100% !important;
+  font-family: myFirstFont;
+  background-color: $background-color;
+  background-size: contain; 
+  background-repeat: round; 
+  background-attachment: scroll;
+  color: $primary-color;
+}
+
+a {
+    color: white;
+}
