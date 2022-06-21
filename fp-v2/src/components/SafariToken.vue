@@ -138,6 +138,16 @@ opacity: .9;
       font-size: 7em;
     }
   }
+  img {
+    width: 50px;
+    text-shadow: grey;
+    @media (min-width: 400px) {
+        width: 100px;
+      }
+    @media (min-width: 750px) {
+      width: 150px;
+    }
+  }
 }
 .lane {
 padding: 30px;
