@@ -2,24 +2,25 @@
   <header :class="{ 'scrolled-nav': scrolledNav }" class="p-shadow-4">
    <nav >
      <ul v-show="!mobile" class="navigation ">
-        <li><a class="link" href="#About" v-smooth-scroll>About</a></li>
-        <li><a class="link" href="#Tokenomics" v-smooth-scroll>Tokenomics</a></li>
-        <li><a class="link" href="#Contract" v-smooth-scroll>Contract</a></li>
-        <li><a class="link" href="#Community" v-smooth-scroll>Community</a></li>
+        <li><a class="link" href="#About" v-smooth-scroll>ABOUT</a></li>
+        <li><a class="link" href="#Tokenomics" v-smooth-scroll>MUSIC</a></li>
+        <li><a class="link" href="#Merch" v-smooth-scroll>STORE</a></li>
+        <li><a class="link" href="#Contact" v-smooth-scroll>LESSONS</a></li>
         <!--
         <li><button @click="goToSite('https://primefaces.org/primevue/showcase/#/button')">BUY $CESS</button></li>
         -->
      </ul>
      <div class="icon">
-       <i @click="toggleMobileNav" v-show="mobile" class="far fa-bars m-nav" :class="{ 'icon-active': mobileNav }"></i>
+       <!--<i @click="toggleMobileNav" v-show="mobile" class="far fa-bars m-nav" :class="{ 'icon-active': mobileNav }"></i>-->
+       <!--<i @click="toggleMobileNav" v-show="mobile" :class="{ 'icon-active': mobileNav }" class="fa-solid fa-skull-crossbones"></i>-->
+       <font-awesome-icon icon="fa-solid fa-skull-crossbones m-nav" spin-pulse @click="toggleMobileNav" v-show="mobile" :class="{ 'icon-active': mobileNav }" size="lg"/>
      </div>
      <transition name="mobile-nav">
        <ul v-show="mobileNav" class="dropdown-nav">
-        <li @click="toggleMobileNav"><a class="link" href="#About" v-smooth-scroll>About</a></li>
-        <li @click="toggleMobileNav"><a class="link" href="#Tokenomics" v-smooth-scroll>Tokenomics</a></li>
-        <li @click="toggleMobileNav"><a class="link" href="#Contract" v-smooth-scroll>Contract</a></li>
-        <li @click="toggleMobileNav"><a class="link" href="#Community" v-smooth-scroll>Community</a></li>
-        <li @click="toggleMobileNav"><a class="link" href="" >Buy $VAN</a></li>
+        <li @click="toggleMobileNav"><a class="link" href="#About" v-smooth-scroll>ABOUT</a></li>
+        <li @click="toggleMobileNav"><a class="link" href="#Tokenomics" v-smooth-scroll>MUSIC</a></li>
+        <li @click="toggleMobileNav"><a class="link" href="#Merch" v-smooth-scroll>STORE</a></li>
+        <li @click="toggleMobileNav"><a class="link" href="#Contact" v-smooth-scroll>LESSONS</a></li>
 
        </ul>
      </transition>
@@ -148,7 +149,7 @@ header {
       color: white;
     }
     .m-nav {
-      padding: 20px;
+      padding: 40px !important;
     }
     .icon {
       display: flex;
@@ -253,7 +254,7 @@ header {
     }
     
     .icon {
-      color: rgb(255, 0, 0);
+      color: rgb(0, 0, 0);
 
     }
   }

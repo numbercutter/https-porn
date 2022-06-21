@@ -9,24 +9,27 @@
         <button @click="goToSite('https://pancakeswap.finance/swap?inputCurrency=0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c&outputCurrency=0x40e8b78546fc1f38758799858742950654e7364b')">Buy</button>
         -->
         <section class="top">
-          <div>
-            <h1>GAME PARK TOKEN</h1>
-            <p>Revolutionizing real world wildlife with onChain integration</p>
-            <button>Claim your Animal</button>
+          <div class="blink">
+            <p class="rotate"><img src="./assets/img/piratetiger.webp" alt="demongraphic" width="100px">MUSIC<img src="./assets/img/piratetiger.webp" alt="demongraphic" width="100px"></p>
+            
+            <hr>
+            <div class="lane ">
+              <br>
+              <a href="https://soundcloud.com/pake_firate" target="_blank">FAKE SOUNDCLOUD</a>
+              <br>
+              <a href="https://open.spotify.com/artist/5Y1e8OzhidUh75DmK5XgS6" target="_blank">FAKE SPOTIFY</a>
+              <br>
+              <a href="https://music.apple.com/us/artist/fake-pirate/1620220880" target="_blank">FAKE APPLE MUSIC</a>
+              <br>
+              
+              
+          </div>
           </div>
         </section>
-        <section class="middle">
-          <div>
-            <h1>HOW TO PLAY</h1>
-            <p></p>
-          </div>
-        </section>
-        <section class="bottom">
-          <div>
-            <h1>CLAIM REWARDS</h1>
-            <p></p>
-          </div>
-        </section>
+        <div id="grid">
+          <img src="./assets/img/GTM15.webp" alt="demongraphic" width="200" class="grid-item">
+          <img src="./assets/img/GTM3.webp" alt="demongraphic" width="200" class="grid-item">
+        </div>
         
       </div>
       
@@ -68,12 +71,42 @@ export default {
     text-decoration: none;
   }
 }
+.blink {
+animation: blinker .1s step-start infinite;
+
+}
+
+@keyframes blinker {
+50% {
+opacity: .9;
+}
+}
+.rotate {
+
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+  /* transform: rotate(3deg); */
+   /* transform: rotate(0.3rad);/ */
+   /* transform: rotate(3grad); */ 
+   /* transform: rotate(.03turn);  */
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
 .outer {
-  padding: 100px 20px 100px;
-  background-image: url('~@/assets/img/ab.jpg');
-  background-size: fill; 
-  background-repeat: round; 
-  background-attachment: fixed;
+  padding: 0px 20px 0px;
+  background-image: url('~@/assets/img/cornw.webp');
+  background-position: cover;
+  background-repeat: repeat;
+  background-size: 100px;
   color: black
 }
 .top {
@@ -81,7 +114,7 @@ export default {
   background-color: rgb(0, 0, 0);
   width: 100%;
   padding: 20px 0px 40px;
-  color: rgb(255, 78, 47);
+  color: rgb(229, 255, 0);
   
   h1 {
     font-family: headerFont;
@@ -96,68 +129,45 @@ export default {
   }
   p {
     font-family: pFont;
-    font-size: .7em;
-    @media (min-width: 400px) {
-        font-size: 1em;
-      }
-    @media (min-width: 750px) {
-      font-size: 1.5em;
-    }
-  }
-}
-.middle {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.705), rgba(255, 94, 0, 0.705));
-  width: 100%;
-  padding: 20px 0px 40px;
-  h1 {
-    font-family: headerFont;
-    font-size: 1.5em;
+    font-size: 3em;
     text-shadow: grey;
     @media (min-width: 400px) {
-        font-size: 2em;
+        font-size: 4em;
       }
     @media (min-width: 750px) {
-      font-size: 3em;
-    }
-  }
-  p {
-    font-family: pFont;
-    font-size: .7em;
-    @media (min-width: 400px) {
-        font-size: 1em;
-      }
-    @media (min-width: 750px) {
-      font-size: 1.5em;
+      font-size: 7em;
     }
   }
 }
-.bottom {
-  background-image: linear-gradient(rgba(255, 94, 0, 0.705), rgb(0, 225, 255));
-  width: 100%;
-  padding: 20px 0px 40px;
-  h1 {
-    font-family: headerFont;
-    font-size: 1.5em;
-    text-shadow: grey;
+.lane {
+padding: 30px;
+margin-top: 20px;
+filter: invert(1);
+}
+a {
+color: deeppink;
+font-size: 4vw;
+font-family: linkFont;
+
+}
+a:hover {
+color: yellowgreen;
+}
+#grid {
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 40px;
+
+  img {
+    width: 100px;
     @media (min-width: 400px) {
-        font-size: 2em;
-      }
-    @media (min-width: 750px) {
-      font-size: 3em;
+      width: 150px;
     }
-  }
-  p {
-    font-family: pFont;
-    font-size: .7em;
-    @media (min-width: 400px) {
-        font-size: 1em;
-      }
     @media (min-width: 750px) {
-      font-size: 1.5em;
+      width: 300px;
     }
   }
 }
-
-
 
 </style>

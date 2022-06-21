@@ -9,25 +9,13 @@
         <button @click="goToSite('https://pancakeswap.finance/swap?inputCurrency=0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c&outputCurrency=0x40e8b78546fc1f38758799858742950654e7364b')">Buy</button>
         -->
         <section class="top">
-          <div>
-            <h1>GAME PARK TOKEN</h1>
-            <p>Revolutionizing real world wildlife with onChain integration</p>
-            <button>Claim your Animal</button>
+          <div class="blink">
+            <img src="./assets/img/fp.png" alt="demongraphic" width="60%">
+            <img src="./assets/img/transtoad.webp" alt="demongraphic" width="30%" >
+            <h1>KATY PERRYS GHOSTWRITER</h1>
           </div>
         </section>
-        <section class="middle">
-          <div>
-            <h1>HOW TO PLAY</h1>
-            <p></p>
-          </div>
-        </section>
-        <section class="bottom">
-          <div>
-            <h1>CLAIM REWARDS</h1>
-            <p></p>
-          </div>
-        </section>
-        
+
       </div>
       
     </div>
@@ -70,18 +58,29 @@ export default {
 }
 .outer {
   padding: 100px 20px 100px;
-  background-image: url('~@/assets/img/ab.jpg');
+  background-image: url('~@/assets/img/deer.jpg');
   background-size: fill; 
   background-repeat: round; 
   background-attachment: fixed;
   color: black
 }
+.blink {
+animation: blinker .6s step-start infinite;
+}
+
+@keyframes blinker {
+50% {
+opacity: .3;
+}
+}
 .top {
   //background-image: linear-gradient(rgba(255, 255, 255, 0.705), rgb(0, 0, 0));
   background-color: rgb(0, 0, 0);
   width: 100%;
+  display: inline-block;
+  align-content: center;
   padding: 20px 0px 40px;
-  color: rgb(255, 78, 47);
+  color: rgb(255, 255, 255);
   
   h1 {
     font-family: headerFont;
@@ -91,7 +90,7 @@ export default {
         font-size: 2em;
       }
     @media (min-width: 750px) {
-      font-size: 3em;
+      font-size: 2em;
     }
   }
   p {
@@ -106,9 +105,10 @@ export default {
   }
 }
 .middle {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.705), rgba(255, 94, 0, 0.705));
+  background-color: rgb(0, 0, 0);
   width: 100%;
   padding: 20px 0px 40px;
+  color: rgb(255, 255, 255);
   h1 {
     font-family: headerFont;
     font-size: 1.5em;
@@ -132,9 +132,10 @@ export default {
   }
 }
 .bottom {
-  background-image: linear-gradient(rgba(255, 94, 0, 0.705), rgb(0, 225, 255));
+  background-color: rgb(0, 0, 0);
   width: 100%;
   padding: 20px 0px 40px;
+  color: rgb(255, 255, 255);
   h1 {
     font-family: headerFont;
     font-size: 1.5em;

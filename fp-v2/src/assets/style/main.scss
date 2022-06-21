@@ -1,8 +1,8 @@
 
-$background-color: rgb(229, 255, 0);
+$background-color: rgb(0, 0, 0);
 $primary-color: #00ff4c;
 $secondary-color: #ff00aa;
-$text-primary: rgb(0, 0, 0);
+$text-primary: rgb(229, 255, 0);
 
 * {
   margin: 0 !important;
@@ -290,13 +290,17 @@ animation-delay: 0.9s;
 }
 @font-face {
   font-family: myFirstFont;
-  src: url(./assets/fonts/a.ttf);
+  src: url(./assets/fonts/l.ttf);
 }
 @font-face {
   font-family: pFont;
-  src: url(./assets/fonts/f.ttf);
+  src: url(./assets/fonts/h.ttf);
 }
 @font-face {
   font-family: headerFont;
-  src: url(./assets/fonts/a.ttf);
+  src: url(./assets/fonts/k.ttf);
+}
+@font-face {
+  font-family: linkFont;
+  src: url(./assets/fonts/k.ttf);
 }
