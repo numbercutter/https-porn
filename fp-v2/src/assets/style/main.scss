@@ -1,0 +1,302 @@
+
+$background-color: rgb(229, 255, 0);
+$primary-color: #00ff4c;
+$secondary-color: #ff00aa;
+$text-primary: rgb(0, 0, 0);
+
+* {
+  margin: 0 !important;
+  ::-webkit-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    display: none;
+  }
+}
+
+body {
+  background-color: $background-color;
+  width: 100% !important;
+  font-family: myFirstFont;
+  //background-image: url('~@/assets/img/checkered.jpg');
+  background-size: contain; 
+  background-repeat: round; 
+  background-attachment: scroll;
+}
+a {
+  color: #00b7ff;
+}
+#app {
+  text-align: center;
+  color: $text-primary;
+  margin: 0;
+  width: 100%; 
+}
+#app-container {
+  background-color: rgba(0, 183, 255, 0.925);
+  
+}
+#router-container {
+  width: 100%;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#user-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 0;
+  transition: .2s ease all;
+  width: 100%;
+  margin: 0 auto;
+  background-color: rgba(109, 109, 109, 0.925);
+  //background-image: require('~@/img/checkered.jpg');
+  //@debug: url('~@/assets/img/game.jpg');
+  filter: hue-rotate(10deg);
+  filter: invert(100%);
+  background-size: fill; 
+  background-repeat: round; 
+  background-attachment: fixed;
+  
+}
+
+.nav-middle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 0;
+  transition: .2s ease all;
+  width: 100%;
+  margin: 0 auto;
+  background-color: white;
+  
+  #cess-nav {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: rgb(0, 225, 255);
+      font-size: .7em;
+      list-style: none;
+      background-color: rgb(255, 255, 255);
+      padding-inline-start: 0px;
+      padding: 0 20px;
+
+      @media (min-width: 400px) {
+        font-size: 1em;
+      }
+      @media (min-width: 750px) {
+        font-size: 1.5em;
+      }
+
+      li {
+        padding: 5px 5px;
+        @media (min-width: 750px) {
+          padding: 5px 20px;
+        }
+      }
+    }
+}
+
+.login-container {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  background-color: $background-color;
+}
+
+
+/* CSS */
+button {
+  align-items: center;
+  appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 38px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 10px;
+  @media (min-width: 450px) {
+    font-size: 18px;
+  }
+}
+
+button:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+button:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+button:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+#nav a.router-link-exact-active {
+  color: #ff7b00;
+}
+.modal-container-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 10px;
+  background-color: rgba(0, 0, 0, 0.637);
+
+  
+}
+.nft-modal {
+  max-width: 8em;
+  @media (min-width: 450px) {
+    max-width: 15em;
+  }
+  @media (min-width: 750px) {
+    max-width: 20em;
+  }
+}
+
+.modal-container {
+display: flex;
+justify-content: center;
+align-items: center;
+padding-right: 10px;
+//background-color: rgb(63, 109, 107);
+background-image: -webkit-radial-gradient(
+  rgba(255, 153, 0, 0.247),
+  rgba(255, 208, 0, 0.158),
+  rgba(0, 0, 0, 0.432)
+);
+
+}
+
+.modal-content {
+display: flex;
+flex-direction: column;
+margin: 0 1rem;
+padding: 1rem;
+-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+-moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+.modal-content-transfer {
+display: flex;
+flex-direction: column;
+margin: 0 1rem;
+padding: 1rem;
+background-color: black;
+-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+-moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+p {
+  padding: 10px;
+}
+}
+
+.modal-container-details {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.modal-content-details {
+position: relative;
+display: flex;
+flex-direction: column;
+margin: 0 1rem;
+padding: 1rem;
+border: 1px solid #e2e8f0;
+border-radius: 0.25rem;
+background: #fff;
+}
+.modal__title {
+font-size: 1.5rem;
+font-weight: 700;
+}
+.center {
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 20px;
+}
+.wave {
+width: 5px;
+height: 50px;
+background: linear-gradient(45deg, rgb(255, 217, 0), #fff);
+margin: 15px;
+animation: wave 1s linear infinite;
+border-radius: 20px;
+}
+.wave:nth-child(2) {
+animation-delay: 0.1s;
+}
+.wave:nth-child(3) {
+animation-delay: 0.2s;
+}
+.wave:nth-child(4) {
+animation-delay: 0.3s;
+}
+.wave:nth-child(5) {
+animation-delay: 0.4s;
+}
+.wave:nth-child(6) {
+animation-delay: 0.5s;
+}
+.wave:nth-child(7) {
+animation-delay: 0.6s;
+}
+.wave:nth-child(8) {
+animation-delay: 0.7s;
+}
+.wave:nth-child(9) {
+animation-delay: 0.8s;
+}
+.wave:nth-child(10) {
+animation-delay: 0.9s;
+}
+
+@keyframes wave {
+0% {
+  transform: scale(0);
+}
+50% {
+  transform: scale(1);
+}
+100% {
+  transform: scale(0);
+}
+}
+@font-face {
+  font-family: myFirstFont;
+  src: url(./assets/fonts/a.ttf);
+}
+@font-face {
+  font-family: pFont;
+  src: url(./assets/fonts/f.ttf);
+}
+@font-face {
+  font-family: headerFont;
+  src: url(./assets/fonts/a.ttf);
+}
