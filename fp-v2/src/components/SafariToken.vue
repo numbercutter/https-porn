@@ -27,6 +27,7 @@
           </div>
         </section>
         <div id="grid">
+          <img src="./assets/img/mythbust.webp" alt="demongraphic" width="200" class="grid-item">
           <img src="./assets/img/GTM15.webp" alt="demongraphic" width="200" class="grid-item">
           <img src="./assets/img/GTM3.webp" alt="demongraphic" width="200" class="grid-item">
         </div>
